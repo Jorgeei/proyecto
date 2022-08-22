@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veterinaria Mis Mascotas</title>
+    <title>Veterinaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos.css" />
-</head>
-
-<body>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
     <header class="principal">
-        <nav class="navegador">
-            <h1 class="titulo">Veterinaria Mis Mascotas</h1>
-            <ul class="listanavegador">
-                <li class="item">
-                    <a href="#" class="link" id="nav-link">Inicio</a>
-                </li>
+      <nav class="navegador">
+        <a href="" class="logo" id="nav-link">Veterinaria mis mascotas</a>
+        <ul class="listanavegador"></ul>
 
-                <li class="item">
-                    <a href="#" class="link" id="nav-link">Nosotros</a>
-                </li>
+        <li class="items">
+          <a href="#" class="link" id="nav-link">Inicio</a>
+        </li>
 
-                <li class="item">
-                    <a href="#" class="link" id="nav-link">Productos</a>
-                </li>
+        <li class="item">
+          <a href="#" class="link" id="nav-link">Nosotros</a>
+        </li>
 
-                <li class="item">
-                    <a href="#" class="link" id="nav-link">Servicios</a>
-                </li>
+        <li class="item">
+          <a href="#" class="link" id="nav-link">Productos</a>
+        </li>
 
-                <li class="item">
-                    <a href="#" class="link" id="nav-link">Contactenos</a>
-                </li>
-            </ul>
-        </nav>
+        <li class="item">
+          <a href="#" class="link" id="nav-link">Servicios</a>
+        </li>
+
+        <li class="item">
+          <a href="#" class="link" id="nav-link">Contactenos</a>
+        </li>
+      </nav>
     </header>
-
+    
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
 
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/foto1.jpg" alt="perro" class="imgradius" />
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/cuidado.jpeg" alt="perro" class="imgradius" />
-            </div>
-            <div class="carousel-item">
-                <img src="img/lavadoperro.jpeg" alt="perro" class="imgradius" />
-            </div>
-            <div class="carousel-item">
-                <img src="img/doctora.jpeg" alt="gato" class="imgradius" />
-            </div>
+        <div class="carousel-item">
+          <img src="img/foto2.jpg" alt="perro" class="imgradius"/>
         </div>
+        <div class="carousel-item">
+          <img src="img/foto3.jpg" alt="gato" class="imgradius" />
+        </div>
+      </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"> 
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
-</body>
-
+  </body>
 </html>
