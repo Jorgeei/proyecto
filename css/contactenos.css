@@ -5,7 +5,7 @@
 
 #pagina{
   font-family: sans-serif;
-  padding: 90px 0 0;
+  padding: 117px 0px 0px;
   background-image: url(https://i.pinimg.com/564x/78/f6/23/78f623744eb045a8084526e9a94256d0.jpg);
 }
 
@@ -87,13 +87,137 @@
 }
 
 /* contactenos */
-.contenedor .form .form-header .form-tittle{
-  font-weight: normal;
-  font-family: sans-serif;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 }
 
-.contenedor .form .form-header .form-tittle span {
-  color:#CE49BF
+h1{
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+form{
+  background: #fff;
+  width: 30%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border: 5px solid #FC5C7D;
+
+}
+
+.form{
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo{
+  position: relative;
+  margin: 45px;
+}
+
+input, textarea{
+  background: none;
+  color:#c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid var(--colorTextos);
+  resize: none;
+}
+
+input:focus,textarea:focus{
+  outline: none;
+  color: rgb(94,93,93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label, textarea:valid~label{
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196F3;
+}
+
+label{
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top:10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+  width: 100%;
+}
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.barra::before{
+  content: '';
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  transition: 0.3s ease all;
+  left: 0%;
+}
+button{
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: block;
+  width: 100px;
+  height: 40px;
+  border:none;
+  color:#fff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1100px){
+  form{
+      width: 50%;
+  }
+}
+
+@media screen and (max-width:600px){
+  form{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width:450px){
+  form{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:300px){
+  form{
+      width: 90%;
+  }
 }
 
 /* footer */
@@ -101,7 +225,6 @@
 .piedepagina{
   width: 100%;
   background-color: #167BAC;
-
 }
 
 .vetlogo1{
@@ -168,4 +291,55 @@ i{
   padding: 15px 10px;
   text-align: center;
   color: white;
+}
+/* media query*/
+
+@media (max-width: 768px){
+  body{
+    padding-top: 70px;
+  }
+
+  .header{
+    height: 60px;
+  }
+
+  .vetlogo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    margin-left: 80px;
+  }
+
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color:#F190B7;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: 100%;
+    overflow-y:auto;
+    left: 100%;
+    transition: left 0.5s;
+  }
+
+  .nav-menu-item{
+    line-height: 70px;
+  }
+  .nav-menu-link:hover, .nav-menu-link_active{
+    background: none;
+    color: #A63EC5;
+  }
+
+  .toggle{
+    display: block;
+  }
+
+  .nav-menu_visible{
+    left: 0;
+  }
+
 }
