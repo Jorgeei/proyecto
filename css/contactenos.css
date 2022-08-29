@@ -1,14 +1,14 @@
 *{
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Righteous', cursive;
+  font-family: 'Acme', sans-serif;
 }
 
 body{
   margin: 0;
   padding: 0;
   display: flex;
-  min-height: 140vh;
+  min-height: 123vh;
   flex-wrap: wrap;
 }
 
@@ -104,7 +104,6 @@ body{
 .info-form{
   padding-top: 10px;
   padding-left: 20px;
-
 }
 
 .container-form{
